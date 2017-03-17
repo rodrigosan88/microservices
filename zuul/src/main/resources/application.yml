@@ -1,0 +1,19 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  routes:
+    cep-service:
+      path: /cep/**
+      serviceId: cep-service
+      stripPrefix: false
+      sensitiveHeaders:
+    auth-service:
+      path: /autorizacao/**
+      serviceId: auth-service
+      stripPrefix: false
+      sensitiveHeaders:
+  
+server:
+  port: 4000
