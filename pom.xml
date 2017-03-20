@@ -11,7 +11,7 @@
 	<modules>
 		<module>autorizacao</module>
 		<module>cep</module>
-		<module>pje-eureka</module>
+		<module>eureka</module>
 		<module>zuul</module>	
 	</modules>
 	
